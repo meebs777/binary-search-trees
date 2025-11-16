@@ -4,7 +4,7 @@ function Node(data) {
   return { data, left, right };
 }
 
-function Tree(array) {
+export function Tree(array) {
   const build = (array, start, end) => {
     if (start > end) return null;
     let mid = start + Math.floor((end - start) / 2);
@@ -208,24 +208,24 @@ const prettyPrint = (node, prefix = "", isLeft = true) => {
   }
 };
 
-const unbalancedTree = Tree([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-unbalancedTree.insert(unbalancedTree.root, 11);
-unbalancedTree.insert(unbalancedTree.root, 12);
-unbalancedTree.insert(unbalancedTree.root, 13);
-unbalancedTree.insert(unbalancedTree.root, 14);
-unbalancedTree.insert(unbalancedTree.root, 15);
-const arr = [];
-prettyPrint(tree.root);
-tree.insert(tree.root,22)
-prettyPrint(tree.root);
-console.log(tree.find(tree.root, 22));
-tree.postOrder(tree.root, (node) => arr.push(node.data))
-console.log(tree.height(tree.root, 77))
-console.log(tree.height(tree.root, 22))
-console.log(tree.isBalanced(tree.root))
-prettyPrint(unbalancedTree.root);
-console.log(tree.isBalanced(unbalancedTree.root))
-unbalancedTree.reBalance();
-prettyPrint(unbalancedTree.getRoot())
-console.log(tree.isBalanced(unbalancedTree.getRoot()))
+// const unbalancedTree = Tree([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// unbalancedTree.insert(unbalancedTree.root, 11);
+// unbalancedTree.insert(unbalancedTree.root, 12);
+// unbalancedTree.insert(unbalancedTree.root, 13);
+// unbalancedTree.insert(unbalancedTree.root, 14);
+// unbalancedTree.insert(unbalancedTree.root, 15);
+// const arr = [];
+// prettyPrint(tree.root);
+// tree.insert(tree.root,22)
+// prettyPrint(tree.root);
+// console.log(tree.find(tree.root, 22));
+// tree.postOrder(tree.root, (node) => arr.push(node.data))
+// console.log(tree.height(tree.root, 77))
+// console.log(tree.height(tree.root, 22))
+// console.log(tree.isBalanced(tree.root))
+// prettyPrint(unbalancedTree.root);
+// console.log(tree.isBalanced(unbalancedTree.root))
+// unbalancedTree.reBalance();
+// prettyPrint(unbalancedTree.getRoot())
+// console.log(tree.isBalanced(unbalancedTree.getRoot()))
 
